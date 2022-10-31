@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Color Scheme Generator - Solo Project</title>
+    <meta name="viewport" content=width=device-width initial-scale=1">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <input type="color" id="color" />
+      <select name="color-scheme" id="color-scheme">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome-dark</option>
+        <option value="monochrome-light">Monochrome-light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic Complement</option>
+        <option value="triad">Triad</option>
+        <option value="quad">quad</option>
+      </select>
+      <input type="number" id="count" />
+      <button id="generate-btn">Get Color Scheme</button>
+    </header>
+    <div id="color-container"></div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rokkitt', serif;
+}
+
+header {
+    border: 1px solid pink;
+    display: flex;
+    padding: 1.5em;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header > * {
+    font-size: 1rem;
+    height: 6vh;
+    min-height: 35px;
+}
+
+
+input[type="color"] {
+    display: block;
+    width: 7%;
+    min-width: 50px;
+} 
+
+input[type="number"] {
+    width: 5%;
+    min-width: 40px;
+    margin: 0 .5em;
+    text-align: center;
+}
+
+#color-scheme {
+    width: 50%;
+    margin: 0  1em;
+}
+
+header > button {
+    cursor:pointer;
+    background: #fff;
+}
+
+:root {
+    --width: 100%;
+    --height: 70vh;
+}
+#color-container {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 85vh;
+    overflow: hidden;
+}
+
+.background-color {
+    height: 95%;
+}
+
+.hex-code {
+    height: 10%;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    .hex-code {
+        font-size: .65rem;
+    }
+}
